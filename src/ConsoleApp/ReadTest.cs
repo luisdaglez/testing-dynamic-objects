@@ -23,6 +23,7 @@ namespace ConsoleApp
                     "strongly typed objects in a list of dynamic");
                 AccessRandomPeople2(readListCount, readCount, _listOfDynamicExpandoObjects,
                     "expando objects in a list of dynamic");
+                Console.WriteLine();
             }
         }
 
@@ -90,8 +91,6 @@ namespace ConsoleApp
                 weakPerson.Name = person.Name;
                 _listOfDynamicExpandoObjects.Add(weakPerson);
             }
-
-            Console.WriteLine("Took {0} ms to generate {1} objects", sw.ElapsedMilliseconds, count);
         }
     }
 }

@@ -13,8 +13,9 @@ namespace ConsoleApp
         {
             for (var i = 0; i < testIterations; i++)
             {
-                GenerateExpandoObjects(writeListCount);
                 GenerateStronglyTypedPeople(writeListCount);
+                GenerateExpandoObjects(writeListCount);
+                Console.WriteLine();
             }
         }
 
