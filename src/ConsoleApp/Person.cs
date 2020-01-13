@@ -2,6 +2,7 @@ using System;
 
 namespace ConsoleApp
 {
+	// A person.
     public class Person
     {
         public int Id { get; set; }
